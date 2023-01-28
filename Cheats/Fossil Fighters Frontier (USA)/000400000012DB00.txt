@@ -22,17 +22,19 @@ D1000000 00000000
 D2000000 00000000
 {Easy mode. No, seriously; this kills the fun.}
 
-[Give All Team Members 999HP (Hold L+R)]
-DD000000 00000300
+[Your Team Is Invincible]
+4FFFE240 14000000
+3FFFE240 15000000
 BFFFE240 00000000
-10000150 000003E7
-10000154 000003E7
-10001580 000003E7
-10001584 000003E7
-100029B0 000003E7
-100029B4 000003E7
+C0000000 00000003
+80000150 00000000
+20000150 000000FF
+20000154 000000FF
+D0000000 00000000
+DC000000 00001430
+D1000000 00000000
 D2000000 00000000
-{Holding L+R while taking damage to set everyone on your team's HP to 999. This will prevent you from ever losing HP. Don't hold L+R with this code on outside of battle! You might get an ARM exception otherwise!}
+{All Team Members Have 255HP and their health doesn't decrease.}
 
 [0 enemy FP (Enemy AI waits every turn)]
 4FFFE24C 14000000
@@ -261,10 +263,9 @@ D2000000 00000000
 
 [++Your Vivosaur Stat Codes++]
 
-[!!!See Notes here for code usage!!!]
+[!!!See Note here for code usage!!!]
 {When the battle starts, you'll see your Vivosaur on the leftmost part of the field. During this time, Hold L+R and your Vivosaur's stats will be modified. If L+R is held while a Paleo Pal is in the leftmost field slot, their stats will be modified too, so don't hold L+R for too long.
 {HP codes might be good to emulate having a boss Vivosaur, especially in combination with the "Use Vivosaur" codes.}
-{Don't hold L+R with these codes on outside of battle! You might get an ARM exception otherwise!}
 
 [Your Vivosaur Starts Out With 999 HP (L+R)]
 DD000000 00000300
@@ -273,6 +274,7 @@ BFFFE240 00000000
 10000154 000003E7
 D2000000 00000000
 {Start out with the 2nd Dreadraven's battle HP. Might revert to normal after attack unless Rank 30.}
+
 
 [Your Vivosaur Starts Out With 800 HP (L+R)]
 DD000000 00000300
