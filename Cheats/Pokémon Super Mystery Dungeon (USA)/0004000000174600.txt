@@ -200,4 +200,66 @@ D0000000 00000000
 00A1334C 000000FF
 00A13350 000000FF
 
+[Max team points]
+00A150D4 000FF0B4
+{Only use after you get official nexus map badge}
+
+[++Pokemon Edit++]
+
+[Change First Pokemon]
+10A1316C 00000000
+{Change last three 0 for the ID ,you need to look for them, of the pokemon then enter one dungeon or go up a floor
+
+[Change Second Pokemon]
+10A13274 00000142
+{same as above}
+
+[Edit 1st Pokemon's 1st move]
+0894C5E8 00000000
+{Make sure you replace the last 3 zeros with the id}
+
+[Edit 1st Pokemon's 2nd move]
+0894C5F4 00000000
+{Make sure you replace the last 3 zeros with the id}
+
+[Edit 1st Pokemon's 3rd move]
+0894C600 00000000
+{Make sure you replace the last 3 zeros with the id}
+
+[Edit 1st pokemons 4th move]
+0894C60C 00000000
+{Make sure you replace the last 3 zeros with the id}
+
+[Edit 2nd pokemons 1st move]
+0894C738 00000000
+{Make sure you replace the last 3 zeros with the id}
+
+[Edit 2nd Pokemon's 2nd move]
+0894C744 00000000
+{Make sure you replace the last 3 zeros with the id}
+
+[Edit 2nd Pokemon's 3rd move]
+0894C750 00000000
+{Make sure you replace the last 3 zeros with the id}
+
+[Edit 2nd Pokemon's 4th move]
+0894C75C 00000000
+{Make sure you replace the last 3 zeros with the id}
+
+[Item Hack]
+{Line 1: Sets the item count to 99}
+{Line 2: Defines the item via ID}
+
+{The code's default will set the first item stored in your Storage Box upon FIRST LOADING your game to be 99 Wooden Spikes. It is recommended that you withdraw and hold 40, and then empty the rest of your inventory into your Storage Box}
+
+{1. You must back out of Withdraw Items in order for the item to refresh. If you back out all of the way, or go to Deposit, then the items will re-sort and the hacked item slot will appear deeper in the item list. This is inconvenient}
+
+{2. Additionally, if you fail to do this, and disable the code without re-generating Wooden Spikes, the code will end up eating the first item in the Storage Box list the next time you load your game. That's why you took out those 40 Wooden Spikes. Put them back in when you are done}
+
+{3. To use this code, load the base code into the cheat list, and manually edit it as needed. You will be editing 1886AD88 0000XXXX}
+
+{4. If for some reason this code will not load properly when the instructions are followed, utilize the search feature on Spikes or Gravelrocks and locate the beginning of the Item block. Above the block are a large number of 00's, and each item is divided by a line of FF's. The item count is two lines up, the item ID is three lines up}
+
+1886AD90 00000063
+1886AD88 00000001
 [--]
